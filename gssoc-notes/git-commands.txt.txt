@@ -1,0 +1,155 @@
+Git Commands and Their Meaning (Easy Documentation)
+1. Clone the Repository
+git clone https://github.com/Rishi895-Rathi/arnio.git
+What it does
+
+This command downloads the complete GitHub repository to your local computer.
+
+Simple Explanation
+
+It creates a copy of the project on your system so you can work on it locally.
+
+2. Move Into the Project Folder
+cd arnio
+What it does
+
+Changes the current directory to the arnio project folder.
+
+Simple Explanation
+
+It opens the project folder inside the terminal.
+
+3. Add the Original Repository as Upstream
+git remote add upstream https://github.com/im-anishraj/arnio.git
+What it does
+
+Connects your forked repository with the original/main repository.
+
+Simple Explanation
+
+This tells Git:
+
+“This is the main project repository from where updates should come.”
+
+Understanding origin and upstream
+Origin
+origin → Your forked repository
+
+Example:
+
+https://github.com/Rishi895-Rathi/arnio.git
+Meaning
+
+This is your personal GitHub copy of the project.
+
+Upstream
+upstream → Original repository
+
+Example:
+
+https://github.com/im-anishraj/arnio.git
+Meaning
+
+This is the actual/main project repository maintained by the project owner.
+
+4. Fetch the Pull Request Branch
+git fetch upstream pull/824/head:pr-824
+What it does
+
+Downloads the code from Pull Request #824 into your local system.
+
+Simple Explanation
+
+It brings another contributor’s PR code to your computer so you can work on it.
+
+5. Switch to the PR Branch
+git checkout pr-824
+What it does
+
+Switches your current branch to the downloaded PR branch.
+
+Simple Explanation
+
+It opens the PR code locally.
+
+6. Create a New Branch
+git checkout -b improve-writecsv-docs
+What it does
+
+Creates a new branch and switches to it immediately.
+
+Simple Explanation
+
+It creates your own working branch where you can safely make changes.
+
+7. Check Project Status
+git status
+What it does
+
+Shows:
+
+modified files
+staged files
+untracked files
+Simple Explanation
+
+It tells you what changes have been made in the project.
+
+8. Add Files for Commit
+git add README.md
+What it does
+
+Stages the README.md file for committing.
+
+Simple Explanation
+
+It tells Git:
+
+“Include this file in the next save point.”
+
+9. Commit the Changes
+git commit -m "Added write_csv usage example to README"
+What it does
+
+Creates a commit with a message describing the changes.
+
+Simple Explanation
+
+It permanently saves your work as a checkpoint.
+
+10. Push the Branch to GitHub
+git push origin improve-writecsv-docs
+What it does
+
+Uploads your branch and commits to GitHub.
+
+Simple Explanation
+
+It sends your local changes to your online GitHub repository.
+
+Final Workflow Summary
+Clone Repository → Open Project Folder → Add Upstream Repository → Fetch Pull Request Branch → Checkout PR Branch → Create Your Own Branch → Make Changes → Add Files → Commit Changes → Push Branch to GitHub → Create Pull Request
+Why We Use Branches
+
+Branches help developers:
+
+work independently
+avoid affecting the main code
+test features safely
+collaborate on projects
+Why Pull Requests Are Important
+
+A Pull Request (PR):
+
+shows your changes to maintainers
+allows code review
+helps merge your contribution into the main project
+What You Contributed
+
+You added:
+
+a write_csv() usage example
+improved project documentation
+easier guidance for new users
+
+This is a valid and useful open-source contribution
