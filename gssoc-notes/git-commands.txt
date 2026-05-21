@@ -1,4 +1,4 @@
-Git Commands and Their Meaning (Easy Documentation)
+\Git Commands and Their Meaning (Easy Documentation)
 1. Clone the Repository
 git clone https://github.com/Rishi895-Rathi/arnio.git
 What it does
@@ -153,3 +153,41 @@ improved project documentation
 easier guidance for new users
 
 This is a valid and useful open-source contribution
+
+1. cat <file>
+Shows the full content of a file in the terminal.
+Example:
+
+cat README.md
+
+→ prints everything inside README.md
+
+2. ls
+Lists all files and folders in the current directory.
+Example:
+
+ls
+
+→ shows what is inside your current folder
+
+3. ls tests/
+Lists all files inside the tests folder specifically.
+Example:
+
+ls tests/
+
+→ shows files only inside tests
+
+4. cd <folder>
+Moves you into a different folder. (cd = change directory)
+Example:
+
+cd tests
+
+→ now you are inside the tests folder
+
+5. pwd
+Shows your current location (full path of folder). (pwd = print working directory)
+Example output:
+
+/home/user/project/tests
